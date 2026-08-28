@@ -33,8 +33,10 @@ From the app repository:
 npm run content:export     # writes content.json
 ```
 
-Bump `version` inside the file, copy it here and push. The number must only
-ever go up — the app ignores anything that is not strictly newer.
+Copy the result here and push. The version is set automatically to the Unix
+second the export ran, so it always goes up; the app ignores anything that is
+not strictly newer than the copy a player already has. Pass `CONTENT_VERSION`
+to set it by hand.
 
 ## Why this is public
 
